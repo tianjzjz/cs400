@@ -23,8 +23,7 @@ const modified = foo(
     }
 )
 
-    
-}
+  
 
 const upperA = foo(
     str=expression1,
