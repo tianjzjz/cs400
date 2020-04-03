@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>weather
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div>
+        City:<%=city%>
+    </div>
+    <div>
+        Position:lon(<%=body.coord.lon%>) lat(<%=body.coord.lat%>)
+    </div>
+    <div>
+        Weather:<%=body.weather[0].main%>
+    </div>
+    <div>
+        Desciption:<%=body.weather[0].description%>
+    </div>  
+    <div>
+        Wind: speed(<%=body.wind.speed%>) deg:(<%=body.wind.deg%>)
+    </div>  
+  </body>
+</html>
