@@ -1,0 +1,18 @@
+Find your city's Weather
+
+<div>
+  <ul>
+    <li *ngFor="let data of datas">
+      <button (click)="selectData(data)">{{ data.city}}</button>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="selectedData">
+  <h3> Weather of {{selectedData.city}}</h3>
+  <li>It feels like {{ selectedData.temp}} K </li>
+  <li>It's a {{ selectedData.weather}} day </li>
+
+  <br>
+  
+</div>
